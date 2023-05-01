@@ -1,0 +1,124 @@
+* {
+    background-color: #bb50be;
+    color: rgb(17, 15, 15);
+    font-family: sans-serif,monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 1vh;
+    padding: auto;
+    transition-duration: 0.5s;
+    transition-property: initial;
+    transition-timing-function: ease-in-out;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 1%;
+}
+header img {
+    width:  10% ;
+    
+animation: opacityTimeImg 3s infinite alternate;
+}
+@keyframes opacityTimeImg {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+hr{
+    margin: 1%;
+}
+h3 {
+    font-size: 28px;
+    color:#EFEFEF;
+}
+#date{
+    border-radius: 5%;
+    margin-bottom: 1rem;
+    background-color: #73a5ce;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;   
+    margin: 1vh; 
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.odliczanie {
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    height: 100vh;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+
+  .licznik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timer-tlo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+box-shadow: 16px 12px 13px 3px rgba(66, 68, 90, 1);
+  }
+    
+  .label {
+    background-color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .years,
+  .months,
+  .days,
+  .hours,
+  .min{
+    background-color: #fff;
+  }
+
+footer {
+    height: 10%;
+    position: relative;
+    bottom: 0;
+   text-align: right;
+   z-index: -1;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* zmiany dla ekranów o szerokości <= 768px */
+
+  .licznik {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+    
+
+}  
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      /* zmiany dla ekranów o szerokości <= 768px */
+     
+  .licznik {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+    }  
